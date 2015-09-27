@@ -2,9 +2,8 @@ define([
 	'jquery',
 	'underscore',
 	'backbone',
-	'bootstrap',
 	'models/book'
-], function ($, _, Backbone, Bootstrap, Book) {
+], function ($, _, Backbone, BookModel) {
 
 	'use strict';
 
@@ -21,8 +20,7 @@ define([
 		},
 
 		openPopupAddBook: function () {
-			this.formBook.open(new Book());
-			console.log(this);
+			this.formBook.open(new BookModel());
 		}
 	});
 

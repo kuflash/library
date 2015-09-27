@@ -17,9 +17,6 @@ define([
 				if (value !== 'file' &&  value !== 'url') {
 					return 'Неверный формат';
 				}
-			},
-			value: function (value, attr, customValue, model) {
-				console.log(value, attr, customValue, model);
 			}
 		}
 	});

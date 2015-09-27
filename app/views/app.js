@@ -3,11 +3,9 @@ define([
 	'underscore',
 	'backbone',
 	'bootstrap',
-	'collections/library',
 	'views/header',
 	'views/formBook',
-	// 'views/listBooks'
-], function ($, _, Backbone, Bootstrap, library, Header, FormBook) {
+], function ($, _, Backbone, Bootstrap, Header, FormBook) {
 
 	'use strict';
 

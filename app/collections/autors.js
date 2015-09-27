@@ -2,9 +2,8 @@ define([
 	'jquery',
 	'underscore',
 	'backbone',
-	'backboneLocalstorage',
 	'models/autor'
-], function ($, _, Backbone, Store, AutorModel) {
+], function ($, _, Backbone, AutorModel) {
 
 	'use strict';
 

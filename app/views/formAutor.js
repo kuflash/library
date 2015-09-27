@@ -3,9 +3,8 @@ define([
 	'underscore',
 	'backbone',
 	'backboneValidation',
-	'bootstrap',
 	'text!templates/formAutor.html'
-], function ($, _, Backbone, BackboneValidation, Bootstrap, formAutorTemplate) {
+], function ($, _, Backbone, BackboneValidation, formAutorTemplate) {
 
 	'use strict';
 

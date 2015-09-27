@@ -3,15 +3,12 @@ define([
 	'underscore',
 	'backbone',
 	'backboneValidation',
-	'bootstrap',
 	'jquerySerializeObject',
-	'models/book',
-	'models/image',
 	'collections/library',
 	'views/formAutors',
 	'views/formImage',
 	'text!templates/formBook.html'
-], function ($, _, Backbone, BackboneValidation, Bootstrap, jquerySerializeObject, Book, Image, Library, FormAutors, FormImage, formBookTemplate) {
+], function ($, _, Backbone, BackboneValidation, jquerySerializeObject, library, FormAutors, FormImage, formBookTemplate) {
 
 	'use strict';
 
@@ -82,14 +79,13 @@ define([
 		save: function () {
 
 			var formData = this.serialize();
-			var errors = null;
+
 			this.model.set(formData);
+
 			if (this.model.isValid(true)) {
-				Library.add(this.model);
+				library.add(this.model);
 				this.model.save();
 				this.$el.modal('hide');
-			} else {
-				console.log(this.model.validate());
 			}
 
 		}

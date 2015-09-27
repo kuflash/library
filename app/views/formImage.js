@@ -2,9 +2,8 @@ define([
 	'jquery',
 	'underscore',
 	'backbone',
-	'bootstrap',
 	'text!templates/formImage.html'
-], function ($, _, Backbone, Bootstrap, formImageTemplate) {
+], function ($, _, Backbone, formImageTemplate) {
 
 	'use strict';
 
