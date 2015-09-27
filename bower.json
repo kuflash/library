@@ -1,0 +1,32 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "authors": [
+    "Igor Uvarov <kuflash@ya.ru>"
+  ],
+  "description": "test for KASP",
+  "main": "app.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "backbone": "~1.2.3",
+    "requirejs": "~2.1.20",
+    "backgrid": "~0.3.5",
+    "backbone-validation": "~0.11.5",
+    "backbone.localStorage": "~1.1.16",
+    "requirejs-text": "~2.0.14",
+    "backbone-relational": "~0.10.0",
+    "bootstrap": "~3.3.5",
+    "jquery-serialize-object": "~2.5.0"
+  }
+}

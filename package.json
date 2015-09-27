@@ -1,0 +1,12 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "test for KASP",
+  "main": "app.js",
+  "scripts": {},
+  "author": "kuflash",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0"
+  }
+}

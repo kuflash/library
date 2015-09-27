@@ -1,0 +1,34 @@
+<div class="row">
+	<div class="col-md-4">
+		<img class="book-image" src="<%= image.value %>" alt="">
+	</div>
+	<div class="col-md-8">
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="<%= image.type === 'file' ? 'active' : '' %>">
+				<a href="#localImage" data-type="file" aria-controls="localImage" role="tab" data-toggle="tab">Загрузить картинку</a>
+			</li>
+			<li role="presentation" class="<%= image.type === 'url' ? 'active' : '' %>">
+				<a href="#remoteImage" data-type="url" aria-controls="remoteImage" role="tab" data-toggle="tab">Картинка по URL</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane <%= image.type === 'file' ? 'active' : '' %>" id="localImage">
+				<div class="form-group">
+					<label for="bookImage">Выберите картинку:</label>
+					<input type="file" class="form-control" accept="image/*" id="bookImage" placeholder="Выберите картинку">
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane <%= image.type === 'url' ? 'active' : '' %>" id="remoteImage">
+				<div class="form-group">
+					<label for="bookImageURL">URL:</label>
+					<input type="text" class="form-control" id="bookImageURL" value="<%= image.value %>" placeholder="Путь до картинки">
+				</div>
+				<div class="form-group">
+					<button type="button" class="download-image-btn btn btn-primary">Загрузить</button>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" name="image[type]" value="<%= image.type %>">
+		<input type="hidden" name="image[value]" value="<%= image.value %>">
+	</div>
+</div>

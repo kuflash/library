@@ -1,0 +1,50 @@
+<div class="form-book modal fade" id="addFromModal" tabindex="-1" role="dialog" aria-labelledby="addFromModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Книга</h4>
+			</div>
+			<div class="modal-body">
+				<form action="">
+					<div class="form-group">
+						<label for="bookTitle">Заголовок</label>
+						<input type="text" class="form-control" id="bookTitle" name="title" value="<%= book.title %>" placeholder="Заголовок">
+					</div>
+					<p class="bg-danger"></p>
+					<div id="formAutors"></div>
+					<div class="form-group">
+						<label for="bookCountPages">Количество страниц</label>
+						<input type="number" class="form-control" id="bookCountPages" name="countPages" value="<%= book.countPages %>" placeholder="Количество страниц">
+					</div>
+					<p class="bg-danger"></p>
+					<div class="form-group">
+						<label for="bookPublishName">Издательство</label>
+						<input type="text" class="form-control" id="bookPublishName" name="publishName" value="<%= book.publishName %>" placeholder="Издательство">
+					</div>
+					<p class="bg-danger"></p>
+					<div class="form-group">
+						<label for="bookPublishYear">Год публикации</label>
+						<input type="number" class="form-control" id="bookPublishYear" name="publishYear" value="<%= book.publishYear %>" placeholder="Год публикации">
+					</div>
+					<p class="bg-danger"></p>
+					<div class="form-group">
+						<label for="bookDate">Год публикации</label>
+						<input type="date" class="form-control" id="bookDate" name="date" value="<%= new Date(book.date).format('yyyy-mm-dd') %>" placeholder="Дата выхода в тираж">
+					</div>
+					<p class="bg-danger"></p>
+					<div class="form-group">
+						<label for="bookISBN">ISBN</label>
+						<input type="text" class="form-control" id="bookISBN" name="isbn" value="<%= book.isbn %>" placeholder="ISBN">
+					</div>
+					<p class="bg-danger"></p>
+					<div class="form-group" id="formImage"></div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="save-btn btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
